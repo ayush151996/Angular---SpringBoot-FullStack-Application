@@ -28,7 +28,7 @@ public String getrecordinglevel() {
 	return recordinglevel;
 }
 
-@Column(name = "level", nullable = false)
+@Column(name = "recordinglevel", nullable = false)
 public void setrecordinglevel(String recordinglevel) {
 	this.recordinglevel = recordinglevel;
 }
