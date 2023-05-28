@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <h1>Record Recording Levels</h1>
+    <form #userForm = "ngForm" ng-submit="submit()">
+        {{userForm.value | json}}
+        {{record|json}}
+        <div class = "form-group">
+            <label>Record level ID:</label>
+            <input type = "text" class="form-control" name="recordid" [(ngModel)]="record.id">
+        </div>
+        <div class = "form-group">
+            <label>Recording level:</label>
+            <input type = "text" class="form-control" name="recordlevel" [(ngModel)]="record.recordinglevel">
+        </div>
+        <button class = "btn btn-primary" type = "submit">Submit</button>
+    </form>
