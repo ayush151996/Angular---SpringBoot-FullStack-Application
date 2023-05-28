@@ -10,7 +10,8 @@ export class RecordlevelsFormsComponent {
  record = new RecordModel('Ayush','5');
 
 onsubmit(){
-console.log(this.record);  
+console.log("onSubmit called");
+console.log(this.record);   
  }
 }
 
