@@ -13,7 +13,7 @@ import jakarta.persistence.*;
 
 public class Record {
   private String id;
-  private String description;
+  private String recordinglevel;
   private BigDecimal price;
   
   public String getId() {
@@ -24,13 +24,13 @@ public void setId(String id) {
 	this.id = id;
 }
 
-public String getDescription() {
-	return description;
+public String getrecordinglevel() {
+	return recordinglevel;
 }
 
-@Column(name = "description", nullable = false)
-public void setDescription(String description) {
-	this.description = description;
+@Column(name = "level", nullable = false)
+public void setlevel(String level) {
+	this.level = level;
 }
 
 public BigDecimal getPrice() {
@@ -46,12 +46,12 @@ public void setPrice(BigDecimal price) {
   
   @Override
 public String toString() {
-	return "Product [id=" + id + ", description=" + description + ", price=" + price + "]";
+	return "Product [id=" + id + ", description=" + recordinglevel + ", price=" + price + "]";
 }
 
-public Record(final String id,final String description,final BigDecimal price) {
+public Record(final String id,final String recordinglevel,final BigDecimal price) {
 	  this.id = id;
-	  this.description = description;
+	  this.recordinglevel = recordinglevel;
 	  this.price = price;
   }
   
