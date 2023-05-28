@@ -12,6 +12,10 @@ export class RecordlevelsFormsComponent {
 onsubmit(){
 console.log("onSubmit called");
 console.log(this.record);   
+  this.http.post<any>('https://localhost:8700/record', this.record).subscribe(data => {
+            this.postId = data.id;
+        })
+        console.log("After POST");     
  }
 }
 
