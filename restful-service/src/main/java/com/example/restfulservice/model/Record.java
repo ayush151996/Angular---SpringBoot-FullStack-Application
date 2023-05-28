@@ -29,8 +29,8 @@ public String getrecordinglevel() {
 }
 
 @Column(name = "level", nullable = false)
-public void setlevel(String level) {
-	this.level = level;
+public void setrecordinglevel(String recordinglevel) {
+	this.recordinglevel = recordinglevel;
 }
 
 public BigDecimal getPrice() {
@@ -46,7 +46,7 @@ public void setPrice(BigDecimal price) {
   
   @Override
 public String toString() {
-	return "Product [id=" + id + ", description=" + recordinglevel + ", price=" + price + "]";
+	return "Product [id=" + id + ", recordinglevel=" + recordinglevel + ", price=" + price + "]";
 }
 
 public Record(final String id,final String recordinglevel,final BigDecimal price) {
